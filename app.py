@@ -1,11 +1,9 @@
 import streamlit as st
 
 # Page config
-st.set_page_config(
-    page_title="Reconikai - Financial Processing Solutions",
-    page_icon="🏦",
-    layout="centered"
-)
+st.set_page_config(page_title="reconik.ai - Financial Processing Solutions",
+                   page_icon="🏦",
+                   layout="centered")
 
 # Custom CSS to match the app style
 st.markdown("""
@@ -94,11 +92,13 @@ st.markdown("""
         font-size: 0.9rem;
     }
 </style>
-""", unsafe_allow_html=True)
+""",
+            unsafe_allow_html=True)
 
 # Header
 st.markdown('<h1 class="main-header">Reconikai</h1>', unsafe_allow_html=True)
-st.markdown('<p class="subtitle">Financial Processing Solutions</p>', unsafe_allow_html=True)
+st.markdown('<p class="subtitle">Financial Processing Solutions</p>',
+            unsafe_allow_html=True)
 
 # NIBSS Settlement - Active
 with st.container():
@@ -108,7 +108,8 @@ with st.container():
         <p class="app-description">Process NIBSS transaction files and generate settlement reports for accounting system integration.</p>
         <a href="https://nibss.reconik.ai" class="launch-button" target="_self">Launch Application →</a>
     </div>
-    """, unsafe_allow_html=True)
+    """,
+                unsafe_allow_html=True)
 
 # File Processing - Coming Soon
 with st.container():
@@ -119,7 +120,8 @@ with st.container():
         <p class="app-description">Advanced file processing and transformation tools for various financial data formats.</p>
         <button class="launch-button" disabled style="opacity: 0.5; cursor: not-allowed;">Coming Soon</button>
     </div>
-    """, unsafe_allow_html=True)
+    """,
+                unsafe_allow_html=True)
 
 # NIBSS Reconciliation - Coming Soon
 with st.container():
@@ -130,7 +132,9 @@ with st.container():
         <p class="app-description">Automated reconciliation and dispute management for NIBSS transactions.</p>
         <button class="launch-button" disabled style="opacity: 0.5; cursor: not-allowed;">Coming Soon</button>
     </div>
-    """, unsafe_allow_html=True)
+    """,
+                unsafe_allow_html=True)
 
 # Footer
-st.markdown('<div class="footer">© 2024 Reconikai. All rights reserved.</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer">© 2024 Reconikai. All rights reserved.</div>',
+            unsafe_allow_html=True)
