@@ -85,9 +85,9 @@ st.markdown("""
     }
     
     .launch-button {
-        background-color: #374151;
+        background-color: #4B5563;
         color: white;
-        padding: 0.625rem 1.25rem;
+        padding: 0.75rem 1.5rem;
         border-radius: 6px;
         text-decoration: none;
         display: inline-block;
@@ -96,13 +96,15 @@ st.markdown("""
         letter-spacing: 0.025em;
         transition: all 0.15s ease;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        border: none;
     }
     
     .launch-button:hover {
-        background-color: #1F2937;
+        background-color: #374151;
         color: white;
         text-decoration: none;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transform: translateY(-1px);
     }
     
     .footer {
@@ -138,7 +140,7 @@ with st.container():
         <span class="coming-soon">Coming Soon</span>
         <h3 class="app-title">File Processing</h3>
         <p class="app-description">Advanced file processing and transformation tools for various financial data formats.</p>
-        <button class="launch-button" disabled style="opacity: 0.5; cursor: not-allowed;">Coming Soon</button>
+        <button class="launch-button" disabled style="opacity: 0.5; cursor: not-allowed; background-color: #6B7280;">Coming Soon</button>
     </div>
     """,
                 unsafe_allow_html=True)
@@ -150,7 +152,7 @@ with st.container():
         <span class="coming-soon">Coming Soon</span>
         <h3 class="app-title">NIBSS Reconciliation</h3>
         <p class="app-description">Automated reconciliation and dispute management for NIBSS transactions.</p>
-        <button class="launch-button" disabled style="opacity: 0.5; cursor: not-allowed;">Coming Soon</button>
+        <button class="launch-button" disabled style="opacity: 0.5; cursor: not-allowed; background-color: #6B7280;">Coming Soon</button>
     </div>
     """,
                 unsafe_allow_html=True)
