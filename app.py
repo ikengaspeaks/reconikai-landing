@@ -85,11 +85,11 @@ st.markdown("""
     }
     
     .launch-button {
-        background-color: #4B5563;
-        color: white;
+        background-color: #4B5563 !important;
+        color: white !important;
         padding: 0.75rem 1.5rem;
         border-radius: 6px;
-        text-decoration: none;
+        text-decoration: none !important;
         display: inline-block;
         font-weight: 500;
         font-size: 0.875rem;
@@ -100,11 +100,21 @@ st.markdown("""
     }
     
     .launch-button:hover {
-        background-color: #374151;
-        color: white;
-        text-decoration: none;
+        background-color: #374151 !important;
+        color: white !important;
+        text-decoration: none !important;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         transform: translateY(-1px);
+    }
+    
+    .launch-button:visited {
+        color: white !important;
+        text-decoration: none !important;
+    }
+    
+    .launch-button:focus {
+        color: white !important;
+        text-decoration: none !important;
     }
     
     .footer {
