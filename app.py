@@ -5,52 +5,66 @@ st.set_page_config(page_title="reconik.ai - Financial Processing Solutions",
                    page_icon="🏦",
                    layout="centered")
 
-# Custom CSS to match the app style
+# Professional Monochrome Design System
 st.markdown("""
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    /* Global Styles */
     .stApp {
-        background-color: #FFFFFF;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: #F8F9FA;
+        color: #1F2937;
     }
+
+    /* Hide Streamlit Branding */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
     
     .main-header {
-        color: #FF6B35;
+        color: #1F2937;
         font-size: 3rem;
-        font-weight: bold;
+        font-weight: 600;
         text-align: center;
         margin-bottom: 0.5rem;
+        letter-spacing: -0.025em;
     }
     
     .subtitle {
-        color: #666666;
+        color: #6B7280;
         font-size: 1.3rem;
+        font-weight: 400;
         text-align: center;
         margin-bottom: 3rem;
     }
     
     .app-container {
         padding: 1.5rem;
-        background-color: #F8F9FA;
+        background-color: white;
         border-radius: 8px;
         margin-bottom: 1rem;
         border: 1px solid #E5E7EB;
-        transition: all 0.3s ease;
+        transition: all 0.15s ease;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     }
     
     .app-container:hover {
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
     
     .app-title {
         font-size: 1.3rem;
         font-weight: 600;
-        color: #333333;
+        color: #1F2937;
         margin-bottom: 0.3rem;
     }
     
     .app-description {
-        color: #666666;
+        color: #6B7280;
         margin-bottom: 1rem;
+        font-size: 0.875rem;
     }
     
     .disabled-container {
@@ -62,34 +76,40 @@ st.markdown("""
         position: absolute;
         top: 1rem;
         right: 1rem;
-        background-color: #666666;
+        background-color: #6B7280;
         color: white;
         padding: 0.3rem 0.8rem;
         border-radius: 4px;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+        font-weight: 500;
     }
     
     .launch-button {
-        background-color: #FF6B35;
+        background-color: #374151;
         color: white;
-        padding: 0.5rem 1.5rem;
-        border-radius: 5px;
+        padding: 0.625rem 1.25rem;
+        border-radius: 6px;
         text-decoration: none;
         display: inline-block;
-        transition: background-color 0.3s;
+        font-weight: 500;
+        font-size: 0.875rem;
+        letter-spacing: 0.025em;
+        transition: all 0.15s ease;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     }
     
     .launch-button:hover {
-        background-color: #E55A2B;
+        background-color: #1F2937;
         color: white;
         text-decoration: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     
     .footer {
         text-align: center;
-        color: #999999;
+        color: #6B7280;
         margin-top: 3rem;
-        font-size: 0.9rem;
+        font-size: 0.875rem;
     }
 </style>
 """,
