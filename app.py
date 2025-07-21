@@ -96,7 +96,7 @@ st.markdown("""
             unsafe_allow_html=True)
 
 # Header
-st.markdown('<h1 class="main-header">Reconikai</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">reconik.ai</h1>', unsafe_allow_html=True)
 st.markdown('<p class="subtitle">Financial Processing Solutions</p>',
             unsafe_allow_html=True)
 
