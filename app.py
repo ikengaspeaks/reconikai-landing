@@ -85,26 +85,25 @@ st.markdown("""
     }
     
     .launch-button {
-        background-color: #4B5563 !important;
+        background: #374151 !important;
         color: white !important;
-        padding: 0.75rem 1.5rem;
-        border-radius: 6px;
+        border: none !important;
+        padding: 0.625rem 1.25rem !important;
+        border-radius: 6px !important;
+        font-weight: 500 !important;
+        font-size: 0.875rem !important;
+        letter-spacing: 0.025em !important;
+        transition: all 0.15s ease !important;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
         text-decoration: none !important;
         display: inline-block;
-        font-weight: 500;
-        font-size: 0.875rem;
-        letter-spacing: 0.025em;
-        transition: all 0.15s ease;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-        border: none;
     }
     
     .launch-button:hover {
-        background-color: #374151 !important;
+        background: #1F2937 !important;
         color: white !important;
         text-decoration: none !important;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
     }
     
     .launch-button:visited {
